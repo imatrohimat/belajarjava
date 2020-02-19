@@ -15,19 +15,36 @@ class Manusia {
     String nama;
     String alamat;
     
-    
-    //Metode 
-    String ambilNama(){
+    //fungsi
+   public String ambilNama(){
         return nama;
     }
-    
+   //prosedur
     void hapusNama(){
         nama="";
     }
     
-    void ubahNama(String namaBaru){
+     void ubahNama(String namaBaru){
         nama= namaBaru;
     }
     
+    void namaAlamat (String namaBaru, String alamatBaru) {
+        nama = namaBaru;
+        alamat = alamatBaru;
+    }
     
+    void jikaValueSamaDgnAtribut (String nama, String alamat) {
+        this.nama=nama;
+        this.alamat=alamat;
+    }
+    
+    //konstraktor untuk memanggil otomatis saat penciptaan manusia
+    public Manusia(){
+        System.out.println("objek manusia dibuat");
+    }
+    
+    //konstraktor menggunakan parameter nama
+    public Manusia(String nama) {
+        this.nama=nama;
+    }
 }
