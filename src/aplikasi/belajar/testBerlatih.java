@@ -3,20 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package penciptaan;
-
+package aplikasi.belajar;
 
 /**
  *
  * @author IMAT-PC
+ * Materi interface
  */
-public class hewanBicara {
+public class testBerlatih {
+    
     public static void main(String[] args) {
-       Hewan hewan1= new Anjing();
-       hewan1.bicara();
-       
-       Hewan hewan2= new Kucing();
-       hewan2.bicara();
-       
-       
-}}
+        Berlatih berlatih = new contohBerlatih();
+        
+        berlatih.baca();
+        berlatih.tulis();
+        
+    }
+    
+   
+}
