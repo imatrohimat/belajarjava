@@ -12,13 +12,24 @@ package penciptaan;
 class Manusia {
     
     //entity
-    String nama;
-    String alamat;
+    public String nama;
+    public String alamat;
     
     //fungsi
    public String ambilNama(){
         return nama;
     }
+   public String ambilAlamat() {
+       return alamat;
+   }
+   
+   public void ambilNama(String nama){
+       this.nama=nama;
+   }
+   
+   public void ambilAlamat(String alamat){
+       this.alamat=alamat;
+   }
    //prosedur
     void hapusNama(){
         nama="";
@@ -27,6 +38,15 @@ class Manusia {
      void ubahNama(String namaBaru){
         nama= namaBaru;
     }
+     
+     public void ubah(String nama){
+         nama=this.nama;
+     }
+     
+     public void ubah(String nama, String alamat) {
+         nama = this.nama;
+         alamat= this.alamat;
+     }
     
     void namaAlamat (String namaBaru, String alamatBaru) {
         nama = namaBaru;

@@ -16,6 +16,10 @@ public class membuatManusia {
          manusia.nama= "Imat Rohimat";
          manusia.ubahNama("imat khoerudin");
          manusia.namaAlamat("Dudung", "Bandung");
+         
+         //memanggil overloading method
+         manusia.ubah("joni");
+         manusia.ubah("joni",  "bandung barat");
         
          
          System.out.println(manusia.nama +"  "+ manusia.alamat);
@@ -23,14 +27,16 @@ public class membuatManusia {
          //dengan cara merubah visibilitas metode menjadi private kita bisa
          //memuculkannya menjadi seperti berikut ini
          
-         System.out.println(manusia.ambilNama());
+         System.out.println(manusia.ambilNama()+" "+ manusia.ambilAlamat());
         
-         //output setelah dipasang konstraktor
+         //cara setelah dipasang konstraktor
          Manusia manusia2 = new Manusia();
          
-         //output stelah konstraktor menggunakan parameter
+         //cara stelah konstraktor menggunakan parameter
          
          Manusia manusia3 = new Manusia("Junaedi");
+         
+         System.out.println(manusia3.nama);
     }
     
     
