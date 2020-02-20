@@ -19,3 +19,4 @@ public class contohBerlatih implements Berlatih{
         System.out.println("Aku sedang menulis");
     }
 }
+
